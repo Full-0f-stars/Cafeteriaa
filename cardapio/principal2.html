@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+    <link rel="stylesheet" href="../cardapio/estilo1.css">
+
+
+</head>
+
+<body>
+
+ <div id="main-container1">
+     <h1> cardapio Central Perk</h1>
+    
+  
+       
+        </div>
+        <div >
+      
+        </div>   
+ </div>
+ <div id="cardapio">
+ <div id="item">
+     <h2>Café preto <h2>
+         <img src="../images/cafe_preto.jpg">
+         <p>Café preto sem acuçar</p>
+        <h1>R$:3,00</h1>
+        
+        Quantidade:<input type="number" value="1" max="10" id="qtd1">
+       <button type="button" id="adicionar1" onclick="AddCarrinho('Café',document.getElementById('qtd1').value,'3',1)"> Comprar </button>
+    
+         
+ </div>
+ <div id="item">
+    <h2>Café com leite <h2>
+        <img src="../images/cafe-leite.jpg">
+        <p>Café com leite sem acuçar</p>
+       <h1>R$:4,00</h1>
+       Quantidade:<input type="number" value="1"max="10" id="qtd2">
+       <button type="button" id="adicionar1"  onclick="AddCarrinho('Café com leite', document.getElementById('qtd2').value,'4',2)"> Comprar </button>
+      
+        
+</div>
+ <div id="item">
+    <h2>Milkshake <h2>
+        <img src="../images/milk.jpg">
+        <p>Milkshake de ovomaltine</p>
+        <h1>R$:13,00</h1> 
+        Quantidade:<input type="number" value="1"max="10" id="qtd3">
+        <button type="button" id="adicionar1"  onclick="AddCarrinho('Milkshake', document.getElementById('qtd3').value,'13',3)"> Comprar </button>
+       
+</div>
+
+<div id="item">
+    <h2>Cappuccino cremoso <h2>
+        <img src="../images/Cappuccino-Cremoso.jpg">
+        <p>Cappuccino cremoso com bastante canela</p>
+        <h1>R$:12,00</h1>
+        Quantidade:<input type="number" value="1"max="10" id="qtd4">
+        <button type="button" id="adicionar1" onclick="AddCarrinho('Cappuccino', document.getElementById('qtd4').value,'12',4)"> Comprar </button>
+</div>
+</div>
+<div id="cardapio">
+<div id="item">
+    <h2>Bolo de chocolate <h2>
+        <img src="../images/bolochoco.jpg">
+        <p>Bolo com recheio de nutella</p>
+        <h1>R$:6,00</h1>
+        Quantidade: <input type="number" value="1"max="10" id="qtd5">
+        <button type="button" id="adicionar1" onclick="AddCarrinho('Bolo de chocolate', document.getElementById('qtd5').value,'6',5)"> Comprar </button>
+</div>
+<div id="item">
+    <h2>Cookie<h2>
+        <img src="../images/cookie.jpg">
+        <p>Cookie com gotas de chocolate</p>
+        <h1>R$:4,00</h1>
+        Quantidade:<input type="number" value="1"max="10" id="qtd6">
+        <button type="button" id="adicionar1"  onclick="AddCarrinho('Cookie', document.getElementById('qtd6').value,'4',6)"> Comprar </button>
+
+</div>
+<div id="item">
+    <h2>Pão de queijo<h2>
+        <img src="../images/paodequeijo.jpg">
+        <p>Pão de queijo temperado</p>
+        <h1>R$:1,00</h1>
+       
+        Quantidade: <input type="number" value="1"max="10" id="qtd7">
+        <button type="button" id="adicionar1" onclick="AddCarrinho('Pão de queijo', document.getElementById('qtd7').value,'1',7)"> Comprar </button>
+</div>
+<div id="item">
+    <h2>Waffles<h2>
+        <img src="../images/waffles.jpg">
+        <p>Waffles com mel</p>
+        <h1>R$:15,00</h1>
+        Quantidade: <input type="number" value="1"max="10" id="qtd8">
+        <button type="button" id="adicionar1"  onclick="AddCarrinho('Waffles', document.getElementById('qtd8').value,'15',8)"> Comprar </button>
+
+ 
+</div>
+</div>
+<input type="button" value="Ver carrinho de compras" onclick="carro()">
+<script src="../cardapio/storage.js"></script>
+<script src="../cardapio/CarrodeCompras/carrinhoo.js"></script>
+</body>
+
+</html>
